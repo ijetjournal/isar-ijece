@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="author" content="http://www.auricletechnologies.com/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>( ISAR IJECE ) - ISAR International Journal of Electronics and Communication Ethics</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="icon" type="image/png" href="http://www.internationaljournalisar.org/images/myicon.jpg" />
+<meta name="description" content="ISAR - International Scientific and Research Journals Journals" />
+<meta name="keywords" content="ISAR - International Scientific and Research Journals Journals" />
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/zerogrid.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/style.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/responsive.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/sitePopUp.css">
+
+<!--menu-->
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/ddsmoothmenu.css">
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/ddsmoothmenu.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#dismiss').live('click', function(){
+		$('.output').fadeOut(0);
+	});
+	$('#admorebtn').live('click', function(){
+		$('#morefieldwrap').append('<p><input type="file" name="file[]" multiple="multiple" autocomplete="off" required="required" class="field filefield" /><input type="button" value="Remove" id="rmmorebtn" class="mrbtn" /></p>');
+	});
+	$('#rmmorebtn').live('click', function(){
+		$(this).parent('p').remove();
+	});
+	$('.downloadLink').live('click', function(){
+		var id = $(this).attr('id');
+		$.ajax({
+			type:"POST",
+			url:"http://www.internationaljournalisar.org/IMAGE/",
+			data:"cmd=downloads&id=" + id,
+			cache:false,
+			success: function(){}
+		});
+	});
+	$('#closeSitePopUp').live('click', function(){
+		$('.sitePopUp').fadeOut(0);
+	});
+});
+</script>
+
+
+<script type="text/javascript">
+try {
+} catch(err) {}</script>
+
+<header>
+   <div class="wrap-header zerogrid" style="position:relative;">
+     <img src="http://www.internationaljournalisar.org/images/myicon.jpg" alt="IJECE ISAR" width="185" height="200" /><br>
+
+<div class="logocontent" style="left:200px; top:55px; position:absolute; font-size:35px; color:#086A87; text-align:center;">ISAR - International Scientific and Research Journals</div>
+
+</div>
+<!--<div class="logocontent" style="left:350px; top:85px; position:absolute; font-size:25px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">International Journals </p>
+</div>-->
+<div class="logocontent" style="left:395px; top:90px; position:absolute; font-size:18px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">Scholary Peer Reviewed Research Publishing Journals </p></div>
+  </div>
+</header>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77439354-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div class="clear"></div>
+<div class="zerogrid">
+  <div >
+
+      <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="http://www.internationaljournalisar.org" style="width:110px;height:8px;line-height:9px; text-align:center;">WELCOME</a></li>
+       <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">ABOUT ISAR</a>
+	             <ul>
+	    <li><a href="http://www.internationaljournalisar.org/About.html" style="width:110px;height:8px;line-height:9px; text-align:left;">About us</a></li>
+
+	               <li><a href="http://www.internationaljournalisar.org/Indexing.html" style="width:100px;height:8px;line-height:9px; text-align:left;">ISAR Indexing</a></li>
+	             </ul>
+        </li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/callforpaper.html" style="width:120px;height:8px;line-height:9px; text-align:center;">CALL FOR PAPER</a> </li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/Journals.html" style="width:120px;height:8px;line-height:9px; text-align:center;">ISAR JOURNALS</a></li>
+        <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">FOR AUTHOR</a>
+          <ul>
+                <li class="subfirst"><a href="http://www.internationaljournalisar.org/publication-guidelines.html" style="width:135px;height:8px;line-height:9px; text-align:left;">Publication Guidelines</a></li>
+           <li><a href="http://www.internationaljournalisar.org/PeerReview.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Peer Review</a></li>
+            <li><a href="http://www.internationaljournalisar.org/Publication-Fee.html"  style="width:100px;height:8px;line-height:19px; text-align:left;">Processing Fee</a></li>
+             <li><a href="http://www.internationaljournalisar.org/Submit-Paper.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Submit Your Paper</a></li>
+          </ul>
+        </li>
+
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/faq.html" style="width:100px;height:8px;line-height:9px; text-align:center;">FAQ</a></li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/Contact.html" style="width:110px;height:8px;line-height:9px; text-align:center;">CONTACT US</a></li>
+              </ul>
+    </div>
+</div><div class="clear"></div>
+<section id="content">
+  <div class="wrap-content zerogrid">
+
+<center><strong><font color="#000000">Anybody can submit their paper by mailing at <a> IJECEsubmit@gmail.com </a></font></strong></center>
+
+
+	      <div class="clear"></div>
+	  <div id="sidebar" class="right col-1-4">
+  <div class="wrap-col">
+
+<div class="box">
+      <div class="heading">
+        <h2>IJECE</h2>
+      </div>
+      <div class="content" style="">
+	  					<ul>
+<li><a href="http://www.internationaljournalisar.org/IJECE/index.html" title="Home">IJECE Home</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/submit.html" title="Topics">Paper Submission</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/CurrentIssues.html" title="CurrentIssues">CurrentIssues</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/Archives.html" title="Archives">Archives</a></li>
+<!--<li><a href="http://www.internationaljournalisar.org/callforpaper.html" title="CALL FOR PAPER">CALL FOR PAPER</a></li>-->
+<li><a href="http://www.internationaljournalisar.org/IJECE/Topics.html" title="Topics">Topics</a></li>
+<!--<li><a href="http://www.internationaljournalisar.org/Indexing.html" title="Indexing">Indexing</a></li>-->
+<!--<li><a href="http://www.internationaljournalisar.org/IJECE/Rivewers.html" title="Reviewers">Reviewers</a></li>
+--><li><a href="http://www.internationaljournalisar.org/IJECE/Editorialboard.html" title="Editorial Board">Editorial Board</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/images/IJECE-PaperFormat.docx" title="Paper Template">Paper Template</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/images/IJECE-CopyrightForm.docx" title=" Copy Right Form">Copy Right Form</a></li>
+ </ul>
+
+
+
+      </div>
+    </div>
+
+
+<div class="box">
+      <div class="heading">
+        <h2>ISAR - Journals</h2>
+      </div>
+      <div class="content" style="">
+<ul>
+<li><a href="http://www.ijretjournal.org/" target="blank" title="ISAR - IJRET">ISAR - International Journal of Research in Engineering Technology</a></li>
+<li><a href="http://www.ijcsejournal.org/" target="blank"  title="ISAR - IJCSE">ISAR - International Journal of Computer science engineering Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/index.html" title="ISAR - IJMCT">ISAR International Journal of Mathematics and Computing Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJPT/index.html" title="ISAR - IJPT"> ISAR International Journal of P2P Network and Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/index.html" title="ISAR - IJECE">ISAR International Journal of Electronics and Communication Ethics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJEEE/index.html" title="ISAR - IJEEE">ISAR International Journal of Electrical and Electronic Ethics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAP/index.html" title="ISAR - IJAP<">ISAR International Journal of Advances in Physics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAC/index.html" title="ISAR - IJAC">ISAR International Journal of Advances in chemistry</a></li>
+      </div>
+    </div>
+
+
+
+			    <div class="box">
+      <div class="heading">
+        <h2>ISAR - News</h2>
+      </div>
+<marquee scrollamount="2" direction="up" onmouseover="this.stop()"  onmouseout="this.start()" loop="true" width="100%">
+
+          <center> <font color="#086A87">
+					ISAR provides e-certificate of publication to authors.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					<a href="http://www.internationaljournalisar.org/callforpaper.html">CALL FOR PAPER</a> for Cureent Issues.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					 Inviting for Join As Reviewers.</font>
+					</center><br>
+
+                                        <center> <font color="#086A87">
+					 You can submit research article to <a href="http://www.internationaljournalisar.org/callforpaper.html"> respective journal mail id</a>.</font>
+					</center><br>
+
+				</marquee>
+
+
+    </div>
+
+
+
+
+<!--<div class="box">
+      <div class="heading">
+        <h2>Official FB Page</h2>
+      </div>
+      <div class="content" style="">
+	  					<iframe src="//www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/ISAR-Journals-737205039741272&amp;width=200&amp;height=400&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:175px; height:230px;" allowTransparency="true"></iframe>
+
+
+      </div>
+    </div>-->
+
+
+		<div class="box">
+      <div class="heading">
+        <h2>Online Visiters</h2>
+      </div>
+		 <br><center><script type="text/javascript" src="http://widget.supercounters.com/flag.js"></script><script type="text/javascript">sc_flag(1160510,"FFFFFF","000000","cccccc",2,10,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript><br>
+
+
+			  </center>
+
+    </div>
+  </div>
+</div>
+      <!--=========================================contact query=====================================-->
+      <div id="main-content" class="col-3-6">
+        <div class="wrap-col">
+
+	          <article>
+            <div class="heading">
+              <center><h2></h2></center>
+            </div>
+            <img src="http://www.internationaljournalisar.org/IJECE/images/title.jpg" alt="IJECE ISAR" width="670" height="100" /><br>
+            <div class="content" style="text-align:justify;"><br>
+              <p><p><span>(<strong><font color="#FF4000">ISAR International Journal of Electronics and Communication Ethics</font></strong> ) explores advances in research pertaining to applied, theoretical and experimental Technological studies. The goal of ISAR IJECE is to promote scientific information interchange between researchers, developers, students, and practitioners working in and around the world.</span></p>
+<table class="MsoTableGrid" style="max-width: 95%; border-collapse: collapse; border-spacing: 0px; padding: 0px; margin: 10px 0px; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; border: none; background-color: #e5e5e5;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 1250.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
+<p class="MsoNoSpacing" style="margin: 10px 10px 10px; padding: px;"><font size="4"><center><b><u>The Features of  - ISAR</u></b></center></font></p>
+<ul>
+        <li>1. Direct Link to abstract</li>
+        <li>2. Open access to all researchers</li>
+        <li>3. Author can search article by name, title or keywords</li>
+        <li>4. Direct link to abstract on each article</li>
+        <li>5. Statistics of each article as no. of times it viewed and downloaded</li>
+	<li>6. Fast publication process</li>
+	<li>7. Proper peer review process</li>
+        <li>8. Electromechanical Engineering</li>
+	<li>9. Suggestion to author if article need modification</li>
+        <li>10. Journal publishes online version.</li>
+
+
+
+
+<p class="MsoNormal" style="margin: 10px 10px 0.0001pt; padding: 0px; line-height: normal;"><b> </b></p>
+</td>
+<td style="width: 959.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
+<p class="MsoNoSpacing" style="margin: 5px 05px; padding: 5px; text-align: center;" align="center"><font size="3"><center><b><u>Open Access </center></u></b></font></p>
+<p>1. A broad ranging open access journal Fast and efficient online submission Expert peer review, rapid publication High visibility</p>
+</td>
+
+</table><br/><br/>
+
+
+ <table class="MsoTableGrid" style="max-width: 95%; border-collapse: collapse; border-spacing: 0px; padding: 0px; margin: 10px 0px; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 30px; border: none; background-color: #fffff" border="1" cellspacing="0" cellpadding="0">
+
+<tbody>
+<tr>
+
+
+<tr>
+<td style="width: 1250.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
+
+<ul>
+       <p><span style="font-family: cambria; font-size: 11pt;"><strong>&nbsp; E&#45ISSN</strong><strong> &nbsp;&nbsp; <br /></strong></span></p>
+
+
+
+<p class="MsoNormal" style="margin: 10px 10px 0.0001pt; padding: 3px; line-height: normal;"><b> </b></p>
+</td>
+<td style="width: 959.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
+
+<p><span style="font-family: cambria; font-size: 13pt;"><font color="#000080"><strong>&nbsp;  Under &#x2D Process</a></span></STRONG></p>
+</td>
+
+<tr>
+<td style="width: 1250.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
+
+<ul>
+       <p><span style="font-family: cambria; font-size: 11pt;"><strong>&nbsp; Publication Frequency    </strong><strong> &nbsp;&nbsp; <br /></strong></span></p>
+
+
+
+<p class="MsoNormal" style="margin: 10px 10px 0.0001pt; padding: 03px; line-height: normal;"><b> </b></p>
+</td>
+<td style="width: 959.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
+
+<p><span style="font-family: cambria; font-size: 11pt;">&nbsp;  6 Issue per Year</a></span></p>
+</td>
+<tr>
+<td style="width: 1350.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
+
+<ul>
+ <p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<strong>&nbsp; Paper Template<br /></strong></span></p>
+
+
+<p class="MsoNormal" style="margin: 10px 10px 0.0001pt; padding: 03px; line-height: normal;"><b> </b></p>
+</td>
+<td style="width: 939.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
+
+<p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<a href="http://www.internationaljournalisar.org/IJECE/images/IJECE-PaperFormat.docx"><font color="#000080"><strong>Download </strong></a></font></span></p>
+</td>
+
+
+<tr>
+<td style="width: 1350.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
+
+<ul>
+ <p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<strong>&nbsp; Copy Right Form<br /></strong></span></p>
+
+
+<p class="MsoNormal" style="margin: 10px 10px 0.0001pt; padding: 03px; line-height: normal;"><b> </b></p>
+</td>
+<td style="width: 939.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
+
+<p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<a href="http://www.internationaljournalisar.org/IJECE/images/IJECE-CopyrightForm.docx"><font color="#000080"><strong>Download </strong></a></font></span></p>
+</td>
+<tr>
+<td style="width: 1250.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
+
+<ul>
+     <p><span style="font-family: cambria; font-size: 11pt;">&nbsp;&nbsp;<strong>Manuscript Submission</strong></span></p>
+
+
+
+<p class="MsoNormal" style="margin: 10px 10px 0.0001pt; padding: 03px; line-height: normal;"><b> </b></p>
+</td>
+<td style="width: 959.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
+
+<p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<font color="#000080"><strong>IJECEsubmit@gmail.com</strong></font></span></p>
+
+</td>
+<tr>
+<td style="width: 1250.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="213">
+
+<ul>
+     <p><span style="font-family: cambria; font-size: 11pt;">&nbsp;&nbsp;<strong>Publisher </strong></span></p>
+
+
+
+<p class="MsoNormal" style="margin: 10px 10px 0.0001pt; padding: 03px; line-height: normal;"><b> </b></p>
+</td>
+<td style="width: 959.6pt; border-style: solid solid solid none; border-top-color: black; border-right-color: black; border-bottom-color: black; border-top-width: 1pt; border-right-width: 1pt; border-bottom-width: 1pt; padding: 0in 5.4pt;" valign="top" width="213">
+
+<p><span style="font-family: cambria; font-size: 11pt;">&nbsp;<a href="http://www.internationaljournalisar.org"><font color="#000080"><strong>(ISAR) International Scientific and Research Journals</strong></a></font></span></p>
+
+</td>
+</table><br/><br/>
+
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+<div class="sitePopUp">
+	<button type="button" id="closeSitePopUp"></button>
+	<a href="http://www.internationaljournalisar.org/Journals.html" target="">
+		<div class="sitePopUpInner">
+			<b style="font-size:15px;color:#CB0707;">ISAR- Journals</font></b><br>
+
+			<center style="margin-top:10px;"><img src="http://www.internationaljournalisar.org/images/paper.gif" width="75%" hieght="50%" /></center>
+<center><img src="http://www.internationaljournalisar.org/images/enter.gif" alt="Click Here" /></center>
+			<!--<b style="font-size:13px;color:#0B0B61;">ISAR -  Journals</b>-->
+		</div>
+	</a>
+</div>
+
+
+
+  <div class="copyright">
+    <p>Copyright &copy;2015 <a href="http://www.internationaljournalisar.org" target="blank"><font size="1"> ISAR - International Scientific And Research Group</font></a>, All rights reserved </font></p>
+  </div>
+</footer></body>
+</html>
