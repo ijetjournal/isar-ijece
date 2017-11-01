@@ -50,6 +50,50 @@ $(document).ready(function(){
 });
 </script>
 
+<script type="text/javascript">
+function myFunction() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    var date = new Date(), y = date.getFullYear(), m = date.getMonth();
+    var firstDay = new Date(y, m, 1);
+    var lastDay = new Date(y, m + 1, 0);
+    //alert(lastDay.getDate());
+
+    var d = new Date();
+    //var mon = month[d.getMonth()];
+    var year=d.getFullYear();
+    var monthClass=document.getElementsByClassName("monthDemo");
+    for(var i = 0, length = monthClass.length; i < length; i++) {
+      monthClass[i].innerHTML = month[d.getMonth()]+" "+year;
+     }
+
+    var dateClass=document.getElementsByClassName("dateDemo");
+    for(var j = 0, length1 = dateClass.length; j < length1; j++) {
+    	dateClass[j].innerHTML = lastDay.getDate() + " - " + month[d.getMonth()]+" "+year;
+    	//alert(lastDay.getDate() + " - " + month[d.getMonth()]+" "+year)
+     }
+
+
+
+    /* document.getElementsByClassName("monthDemo").innerHTML = "Call for paper "+ month[d.getMonth()]+" "+year; */
+}
+
+window.onload = function() {
+  myFunction();
+};
+</script>
+
 
 <script type="text/javascript">
 try {
@@ -111,8 +155,9 @@ try {
 <section id="content">
   <div class="wrap-content zerogrid">
 
-<center><strong><font color="#000000">Anybody can submit their paper by mailing at <a> IJECEsubmit@gmail.com </a></font></strong></center>
-
+<marquee direction="left" scrollamount="3" scrolldelay="3">
+<a name="up" id="up"></a><strong><font color="#000000">Anybody can submit their paper by mailing at </font> <font color="#0776C2">IJECEsubmit@gmail.com</font></strong>
+</marquee>
 
 	      <div class="clear"></div>
 	  <div id="sidebar" class="right col-1-4">
@@ -128,10 +173,10 @@ try {
 <li><a href="http://www.internationaljournalisar.org/IJECE/submit.html" title="Topics">Paper Submission</a></li>
 <li><a href="http://www.internationaljournalisar.org/IJECE/CurrentIssues.html" title="CurrentIssues">CurrentIssues</a></li>
 <li><a href="http://www.internationaljournalisar.org/IJECE/Archives.html" title="Archives">Archives</a></li>
-<!--<li><a href="http://www.internationaljournalisar.org/callforpaper.html" title="CALL FOR PAPER">CALL FOR PAPER</a></li>-->
+<li><a href="http://www.internationaljournalisar.org/callforpaper.html" title="CALL FOR PAPER">Call For Paper</a></li>
 <li><a href="http://www.internationaljournalisar.org/IJECE/Topics.html" title="Topics">Topics</a></li>
-<!--<li><a href="http://www.internationaljournalisar.org/Indexing.html" title="Indexing">Indexing</a></li>-->
-<li><a href="http://www.internationaljournalisar.org/IJECE/Rivewers.html" title="Reviewers">Reviewers</a></li>
+<li><a href="http://www.internationaljournalisar.org/Indexing.html" title="Indexing">Indexing</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/Reviewers.html" title="Reviewers">Reviewers</a></li>
 <li><a href="http://www.internationaljournalisar.org/IJECE/Editorialboard.html" title="Editorial Board">Editorial Board</a></li>
 <li><a href="http://www.internationaljournalisar.org/IJECE/images/IJECE-PaperFormat.docx" title="Paper Template">Paper Template</a></li>
 <li><a href="http://www.internationaljournalisar.org/IJECE/images/IJECE-CopyrightForm.docx" title=" Copy Right Form">Copy Right Form</a></li>
@@ -208,42 +253,33 @@ try {
       <div id="main-content" class="col-3-6">
         <div class="wrap-col">
 
+<center><a href="http://www.internationaljournalisar.org/callforpaper.html"><font face="arial" font color="#1784D9" font size="3"><strong>Call for Paper </strong></font><font face="arial" font color="#FF0000" font size="3"><strong><span class="monthDemo"></span><img src="http://www.internationaljournalisar.org/images/new.gif" align="#" style="margin:0px"></strong></font></a></center>
+
 	          <article>
             <div class="heading">
               <center><h2>ISAR International Journal of Electronics and Communication Ethics</h2></center>
       </div>
-<h2>ISAR IJECE  Reviewrs Board :-</h2>
+
+<h2>ISAR IJECE  Join as a Reviewer :-</h2>
 
             <div class="content" style="text-align:justify;"><br>
               <p>
-<li><a>Shaikh Hannan</a></li>
-Ambedkar National Institute of Technology,India<br>
+The purpose of ISAR-IJECE is to bring together the specialists, experts and researchers from industries, government agencies and academics for the development of Technology which may improve the life of common people. This will also provide a forum for fruitful exchange of ideas and information about ongoing research & developments in Engineering & Technology
+<br><br>
 
-<li> <a>Pinaki Patel </a></li>
-Haldia Institute of Technology, India<br>
+1. Should be a holder of PhD degree from a recognized university.<br>
 
-<li><a>Biswajit Basak</a></li>
-Galaxy Global Imperial Technical Campus,Shahabad (Ambala), Haryana<br>
+2. Should be an author with a minimum of a 4 publications in reputed journals.<br>
 
-<li><a>Pooja Jain</a></li>
-Indian Insitute of Technology, Kharagpur, India <br>
-
-<li><a>Nikhil Shrikant</a></li>
-National Institute of Engineering, India<br>
-
-<li><a>Saurabh Pal</a></li>
-Associate Professor of CSE in KL University. A.P<br>
-
-<li><a>Yogi Dayal Patnaik</a></li>
-Electronics and Computer Engineering, KL University India<br>
-
-<li><a>Ashu Gupta </a></li>
-Bhagwati Chaturvedi College of Engineering, India<br>
-
-
+<br>
+Board Members & Reviewers duties:<br>
+1. Contribute the popularity of ISAR-IJECE ,<br>
+2. Initiate the scholars to put papers in ISAR-IJECE ,<br>
+3. Board members should help the quality improvement of journal,<br>
+4. Board member should bring ISAR-IJECE as one of leading journal in the world.</p>
 
 <br/><br/>
-
+<font size="2">Apply Online : <a href="http://ems.internationaljournalisar.org/Reviewer.php" target="blank">http://ems.internationaljournalisar.org/Reviewer.php</a></font>
 
             </div>
           </article>
